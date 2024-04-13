@@ -1,10 +1,10 @@
 package oscar.c.pozas.playgroud.context.pokemon.app.controller.viewmodel
 
-import oscar.c.pozas.playgroud.context.pokemon.domain.Pokemon
+import oscar.c.pozas.playgroud.context.pokemon.app.interactor.query.PokemonQueryResult
 
 data class PokemonViewModel(
-    val id: Int,
+    val id: String,
     val name: String
 )
 
-fun Pokemon.toViewModel(): PokemonViewModel = PokemonViewModel(this.id.value, this.name.value)
+fun PokemonQueryResult.toViewModel(): PokemonViewModel = PokemonViewModel(id, name)

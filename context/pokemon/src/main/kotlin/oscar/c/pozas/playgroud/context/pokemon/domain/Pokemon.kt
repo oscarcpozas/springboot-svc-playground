@@ -6,11 +6,12 @@ data class Pokemon(
 ) {
 
     data class Id(val value: Int) {
-
         init {
             if (value <= 0) throw IllegalStateException("Pokemon Id can't be negative") // TODO: Use domain exception
         }
     }
 
-    data class Name(val value: String)
+    data class Name(val value: String) {
+        override fun toString(): String = value
+    }
 }
