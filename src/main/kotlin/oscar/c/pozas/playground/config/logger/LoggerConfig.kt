@@ -1,4 +1,4 @@
-package oscar.c.pozas.playground.config
+package oscar.c.pozas.playground.config.logger
 
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration

@@ -1,5 +1,5 @@
 [versions]
-kotlin = "1.8.21"
+kotlin = "2.0.0"
 shedlock = "5.2.0"
 exposed = "0.41.1"
 restAssured = "5.3.0"
@@ -21,7 +21,10 @@ springboot-test = { module = "org.springframework.boot:spring-boot-starter-test"
 springboot-cache = { module = "org.springframework.boot:spring-boot-starter-cache" }
 springboot-data-redis = { module = "org.springframework.boot:spring-boot-starter-data-redis" }
 
+spring-kafka = { module = "org.springframework.kafka:spring-kafka", version = "3.2.1" }
+
 springcloud-openFeign = { module = "org.springframework.cloud:spring-cloud-starter-openfeign", version = "4.0.2" }
+springcloud-kafka-binder = { module = "org.springframework.cloud:spring-cloud-stream-binder-kafka", version = "3.2.1" }
 
 springdoc-openapi = { module = "org.springdoc:springdoc-openapi-starter-webmvc-ui", version = "2.1.0" }
 

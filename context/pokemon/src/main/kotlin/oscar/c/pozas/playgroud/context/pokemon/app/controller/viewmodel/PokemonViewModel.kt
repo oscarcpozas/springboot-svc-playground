@@ -7,4 +7,4 @@ data class PokemonViewModel(
     val name: String
 )
 
-fun PokemonQueryResult.toViewModel(): PokemonViewModel = PokemonViewModel(id, name)
+fun PokemonQueryResult.toViewModel(): PokemonViewModel = PokemonViewModel(id.toString(), name)

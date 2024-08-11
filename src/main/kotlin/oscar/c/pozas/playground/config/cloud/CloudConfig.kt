@@ -1,4 +1,4 @@
-package oscar.c.pozas.playground.config
+package oscar.c.pozas.playground.config.cloud
 
 import org.springframework.cloud.openfeign.EnableFeignClients
 import org.springframework.context.annotation.Configuration

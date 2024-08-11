@@ -1,6 +1,7 @@
-package oscar.c.pozas.playgroud.context.pokemon.app.controller.interceptor
+package oscar.c.pozas.playground.httpinterceptor
 
 import com.fasterxml.jackson.databind.ObjectMapper
+import jakarta.inject.Named
 import org.springframework.stereotype.Component
 import org.springframework.ui.ModelMap
 import org.springframework.web.context.request.RequestAttributes
@@ -8,7 +9,7 @@ import org.springframework.web.context.request.WebRequest
 import org.springframework.web.context.request.WebRequestInterceptor
 import oscar.c.pozas.playground.kernel.logging.Logger
 
-@Component
+@Named
 class RequestTimeInterceptor(private val logger: Logger) : WebRequestInterceptor {
 
     override fun preHandle(request: WebRequest) {

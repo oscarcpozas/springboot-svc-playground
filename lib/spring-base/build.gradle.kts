@@ -20,8 +20,7 @@ dependencies {
 
     // Spring doc Open API Spec
     api(libs.springdoc.openapi)
-}
 
-kotlin {
-    jvmToolchain(17)
+    // Kafka client
+    api(libs.springcloud.kafka.binder)
 }

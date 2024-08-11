@@ -47,10 +47,6 @@ dependencies {
     testImplementation(libs.embeddedDatabase)
 }
 
-kotlin {
-    jvmToolchain(17)
-}
-
 tasks.test {
     useJUnitPlatform()
 }

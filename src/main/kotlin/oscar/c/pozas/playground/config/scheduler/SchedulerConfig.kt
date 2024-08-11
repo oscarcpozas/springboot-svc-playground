@@ -1,4 +1,4 @@
-package oscar.c.pozas.playground.config
+package oscar.c.pozas.playground.config.scheduler
 
 import net.javacrumbs.shedlock.core.LockProvider
 import net.javacrumbs.shedlock.provider.redis.spring.RedisLockProvider
